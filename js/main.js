@@ -44,12 +44,17 @@ for (let i = 0; i < members.length; i++) {
     // console.log(team);
 
     //Stampare le stesse informazioni su DOM sottoforma di stringhe
-    const memberTeam = document.createElement(`li`);
-    memberTeam.innerHTML = team.NameMember + `  ` + team.role + `  ` + team.imgSource;
-    document.getElementById(`list`).append(memberTeam);
+    // const memberTeam = document.createElement(`li`);
+    // memberTeam.innerHTML = team.NameMember + `  ` + team.role + `  ` + team.imgSource;
+     
+    const memberTeam = `
+        <li> 
+            <img src=img/${team.imgSource}>
+            <h4>${team.NameMember}</h4>
+            <p>${team.role}
+    `
+    document.getElementById(`list`).innerHTML += memberTeam;
 }
-
-
 
 //BONUS 1:Trasformare la stringa foto in una immagine effettiva
 
