@@ -45,7 +45,7 @@ for (let i = 0; i < members.length; i++) {
 
     //Stampare le stesse informazioni su DOM sottoforma di stringhe
     const memberTeam = document.createElement(`li`);
-    memberTeam.innerHTML = team.members;
+    memberTeam.innerHTML = team.NameMember + `  ` + team.role + `  ` + team.imgSource;
     document.getElementById(`list`).append(memberTeam);
 }
 
