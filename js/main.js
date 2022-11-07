@@ -38,6 +38,10 @@ const members = [
 
 //Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto.
 
+for (let i = 0; i < members.length; i++) {
+    const team = members[i];
+    console.log(team);
+}
 //Stampare le stesse informazioni su DOM sottoforma di stringhe
 
 //BONUS 1:Trasformare la stringa foto in una immagine effettiva
